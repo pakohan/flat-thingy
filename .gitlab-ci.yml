@@ -1,0 +1,53 @@
+stages:
+  - buildtag
+  - buildlatest
+  - builddevelop
+  - test
+  - deploytag
+  - deploydevelop
+  - deploylatest
+
+before_script:
+  - env
+  - docker ps
+
+buildtagimage:
+  stage: buildtag
+  script:
+    - make docker-image-tag
+
+buildlatestimage:
+  stage: buildlatest
+  script:
+    - make docker-image-latest
+  only:
+    - master
+
+builddevelopimage:
+  stage: builddevelop
+  script:
+    - make docker-image-latest
+  only:
+    - develop
+
+runbasetests:
+  stage: test
+  script:
+    - make docker-test-base
+
+pushtagimage:
+  stage: deploytag
+  script:
+    - make docker-push-tag
+
+pushlatestimage:
+  stage: deploylatest
+  script:
+    - make docker-push-latest
+  only:
+    - master
+
+pushdevelopimage:
+  stage: deploydevelop
+  script:
+    - make docker-push-develop

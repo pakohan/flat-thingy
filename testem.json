@@ -1,0 +1,16 @@
+{
+    "framework" : "jasmine",
+    "launch_in_dev" : ["PhantomJS"],
+    "launch_in_ci" : ["PhantomJS"],
+    "src_files" : [
+        "vendor/angular/angular.js",
+        "vendor/angular-mocks/angular-mocks.js",
+        "src/test/prepare.js",
+        "build_jw/vendor/*.js",
+        "build_jw/src/app.js",
+        "build_jw/src/*.js",
+        "build_jw/src/**/*.js",
+        "src/**/*.spec.js"
+    ],
+    "src_files_ignore": "build_jw/vendor/angular.js"
+}
