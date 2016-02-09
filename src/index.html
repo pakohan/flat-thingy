@@ -35,7 +35,7 @@
 </head>
 
 <body ng-cloak>
-	<div ui-view="frame"></div>
+	<div ng-include="'root/root.tpl.html'"></div>
 	<!-- compiled JavaScript -->
 	<% scripts.forEach( function ( file ) { %>
 		<script type="text/javascript" src="<%= file %>"></script>
