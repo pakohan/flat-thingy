@@ -1,7 +1,5 @@
-angular.module('jw-ng-template').controller('StartPageCtrl', ($scope, $mdSidenav) => {
-    console.log('test');
+angular.module('flat-thingy').controller('StartPageCtrl', ($scope, $mdSidenav) => {
     $scope.openMenu = () => {
-        console.log('test');
         $mdSidenav('left').toggle();
     };
 });

@@ -1,4 +1,4 @@
-angular.module('jw-ng-template', [
+angular.module('flat-thingy', [
     'ui.router',
     'templates-app',
     'angular-toArrayFilter',

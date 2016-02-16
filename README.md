@@ -1,4 +1,4 @@
-# jw-ng-template
+# flat-thingy
 
 ## Getting Started
 

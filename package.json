@@ -1,9 +1,9 @@
 {
-  "name": "jw-ng-template",
+  "name": "flat-thingy",
   "version": "0.1.0",
   "author": "JustWatch",
   "homepage": "https://www.justwatch.com",
-  "repository": "https://gitlab.justwatch.com/jw/jw-ng-template",
+  "repository": "https://gitlab.justwatch.com/jw/flat-thingy",
   "license": "none",
   "devDependencies": {
     "angular-mocks": "^1.4.7",
